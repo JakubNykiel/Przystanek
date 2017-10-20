@@ -12,9 +12,12 @@
 		C38DE8871F9A4BBA00D21B39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38DE8851F9A4BBA00D21B39 /* Main.storyboard */; };
 		C38DE8891F9A4BBA00D21B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C38DE8881F9A4BBA00D21B39 /* Assets.xcassets */; };
 		C38DE88C1F9A4BBA00D21B39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C38DE88A1F9A4BBA00D21B39 /* LaunchScreen.storyboard */; };
+		E4628AB13AA76047ABC25CCD /* Pods_Przystanek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60019DAC44AF0D1DA50E229 /* Pods_Przystanek.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7646A141C4286516CC981C89 /* Pods-Przystanek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Przystanek.release.xcconfig"; path = "Pods/Target Support Files/Pods-Przystanek/Pods-Przystanek.release.xcconfig"; sourceTree = "<group>"; };
+		B60019DAC44AF0D1DA50E229 /* Pods_Przystanek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Przystanek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38DE87E1F9A4BBA00D21B39 /* Przystanek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Przystanek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C38DE8811F9A4BBA00D21B39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C38DE8831F9A4BBA00D21B39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C38DE8881F9A4BBA00D21B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C38DE88B1F9A4BBA00D21B39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C38DE88D1F9A4BBA00D21B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C63CC2DB419956A0D7AD3F9C /* Pods-Przystanek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Przystanek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Przystanek/Pods-Przystanek.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4628AB13AA76047ABC25CCD /* Pods_Przystanek.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9BDEC009FAC211CD415F198 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C63CC2DB419956A0D7AD3F9C /* Pods-Przystanek.debug.xcconfig */,
+				7646A141C4286516CC981C89 /* Pods-Przystanek.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD7110E5B5DB6845A4FA399D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B60019DAC44AF0D1DA50E229 /* Pods_Przystanek.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C38DE8751F9A4BBA00D21B39 = {
 			isa = PBXGroup;
 			children = (
 				C38DE8801F9A4BBA00D21B39 /* Przystanek */,
 				C38DE87F1F9A4BBA00D21B39 /* Products */,
+				A9BDEC009FAC211CD415F198 /* Pods */,
+				BD7110E5B5DB6845A4FA399D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C38DE8901F9A4BBA00D21B39 /* Build configuration list for PBXNativeTarget "Przystanek" */;
 			buildPhases = (
+				8B269AF6FE6C9F9E104FB5D5 /* [CP] Check Pods Manifest.lock */,
 				C38DE87A1F9A4BBA00D21B39 /* Sources */,
 				C38DE87B1F9A4BBA00D21B39 /* Frameworks */,
 				C38DE87C1F9A4BBA00D21B39 /* Resources */,
+				A72F114EB06E8EFB34DF96B1 /* [CP] Embed Pods Frameworks */,
+				1D6E01901BF92A00B7F29C67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D6E01901BF92A00B7F29C67 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Przystanek/Pods-Przystanek-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B269AF6FE6C9F9E104FB5D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Przystanek-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A72F114EB06E8EFB34DF96B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Przystanek/Pods-Przystanek-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Przystanek/Pods-Przystanek-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C38DE87A1F9A4BBA00D21B39 /* Sources */ = {
@@ -280,31 +365,33 @@
 		};
 		C38DE8911F9A4BBA00D21B39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63CC2DB419956A0D7AD3F9C /* Pods-Przystanek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6454359TU3;
-				INFOPLIST_FILE = Przystanek/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Przystanek/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kulker.Przystanek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C38DE8921F9A4BBA00D21B39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7646A141C4286516CC981C89 /* Pods-Przystanek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6454359TU3;
-				INFOPLIST_FILE = Przystanek/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Przystanek/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kulker.Przystanek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
